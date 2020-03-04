@@ -1,26 +1,48 @@
-<div class="wrpper">
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BestMuch</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+
+<body>
   <div class="header">
-    <div class="top">
-    </div>
+    <div class="top"></div>
     <div class="bottom">
       <div class="title">
         <%= link_to("ManchesterUnited", "#", {class: "title__name"})%>
       </div>
       <div class="box">
-        <div class="box__left">
-        <%= link_to("新規投稿","/posts/new", {class: "box__left--item"}) %>
-        </div>
-        <div class="box__right">
-        <%= link_to("ログイン", "#", {class: "box__right--pic"}) %>
-        </div>
+        <% if user_signed_in? %>
+          <div class="box__left">
+            <%= link_to "新規投稿", new_post_path, class: "box__left--item" %>
+          </div>
+          <div class="box__right">
+           <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "box__right--pic" %>
+          </div>
+        <% else %>
+          <div class="title__left">
+             <%= link_to("新規ログイン","/users/sign_in", {class: "title__left--item"}) %>
+          </div>
+          <div class="title__right">
+             <%= link_to("ログイン","/users/sign_up", {class: "title__right--pic"}) %>
+          </div>
+        <% end %>
       </div>
     </div>
   </div>
-<% @posts.each do |post|%>
-  <div class="main">
-    <div class="main__top">
-      <%= post.title %>
-    </div>
-  </div>
-<% end %>
+ <% @posts.each do |post|%>
+   <div class="main">
+     <div class="main__top">
+       <%= link_to post.title, post_path(post.id), class: "main__top--item" %>
+     </div>
+   </div>
+ <% end %>
 </div>
+</body>
+</html>
