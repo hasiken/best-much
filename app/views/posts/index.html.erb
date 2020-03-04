@@ -1,0 +1,26 @@
+<div class="wrpper">
+  <div class="header">
+    <div class="top">
+    </div>
+    <div class="bottom">
+      <div class="title">
+        <%= link_to("ManchesterUnited", "#", {class: "title__name"})%>
+      </div>
+      <div class="box">
+        <div class="box__left">
+        <%= link_to("新規投稿","/posts/new", {class: "box__left--item"}) %>
+        </div>
+        <div class="box__right">
+        <%= link_to("ログイン", "#", {class: "box__right--pic"}) %>
+        </div>
+      </div>
+    </div>
+  </div>
+<% @posts.each do |post|%>
+  <div class="main">
+    <div class="main__top">
+      <%= post.title %>
+    </div>
+  </div>
+<% end %>
+</div>
