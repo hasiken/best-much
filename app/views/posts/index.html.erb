@@ -26,8 +26,10 @@
   </div>
  <% @posts.each do |post|%>
    <div class="main">
-     <div class="main__top">
-       <%= link_to post.title, post_path(post.id), class: "main__top--item" %>
+    <div class="main__right">
+    </div>
+     <div class="main__left">
+       <%= link_to post.title, post_path(post.id), class: "main__left--item" %>
      </div>
    </div>
  <% end %>
