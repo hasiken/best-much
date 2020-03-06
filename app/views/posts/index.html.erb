@@ -28,6 +28,7 @@
     </div>
   </div>
 <div class="best">
+<% if user_signed_in? %>
  <% @posts.each do |post|%>
    <div class="main">
     <div class="main__right">
@@ -36,6 +37,8 @@
        <%= link_to post.title, post_path(post.id), class: "main__left--item" %>
      </div> 
    </div>
+ <% end %>
+ <% else %> 
  <% end %>
 </div>
 </div>

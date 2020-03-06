@@ -7,4 +7,8 @@
     <div >
  </div>
   <% end %>
+  <% @user.liked_posts.each do |post| %>
+  <%= post.user.nickname %>
+
+  <% end %>
 <div>
