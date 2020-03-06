@@ -13,6 +13,9 @@
           <div class="box__right">
            <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "box__right--pic" %>
           </div>
+          <div class="box__main">
+            <%= link_to "マイページ", "/users/#{current_user.id}", class: "box__main--pege" %>
+          </div>
         <% else %>
           <div class="title__left">
              <%= link_to("新規ログイン","/users/sign_in", {class: "title__left--item"}) %>
@@ -24,13 +27,15 @@
       </div>
     </div>
   </div>
+<div class="best">
  <% @posts.each do |post|%>
    <div class="main">
     <div class="main__right">
     </div>
      <div class="main__left">
        <%= link_to post.title, post_path(post.id), class: "main__left--item" %>
-     </div>
+     </div> 
    </div>
  <% end %>
+</div>
 </div>

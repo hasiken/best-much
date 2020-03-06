@@ -1,0 +1,10 @@
+<div class="contens">
+  <p><%= @nickname %>さんの投稿一覧</p>
+
+  <% @posts.each do |post| %>
+    <div class="content-post">
+      <%= link_to post.title, post_path(post.id), class: "content-post__right" %>
+    <div >
+ </div>
+  <% end %>
+<div>
