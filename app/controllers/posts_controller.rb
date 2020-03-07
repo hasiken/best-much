@@ -2,7 +2,9 @@ class PostsController < ApplicationController
  
   def index
      @posts = Post.all
+     
   end
+
 
   def new
     @post = Post.new
@@ -16,6 +18,10 @@ class PostsController < ApplicationController
   def show
     @post = Post.find(params[:id])
     @like = Like.new
+  end
+
+  def short
+     @all_ranks = Post.find(Like.group(:post_id).order('count(post_id) desc').limit(3).pluck(:post_id))
   end
 
   private
