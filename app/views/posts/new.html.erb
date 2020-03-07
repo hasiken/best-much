@@ -3,7 +3,7 @@
  </div>
  <%= form_with model: @post, class: :form,local: true do |form| %>
     <%= form.text_field :title, placeholder: :タイトルを入力してください,class: :form__top%>
-    <%= form.text_field :cf, placeholder: :a, class: :form__CF%>
+    <%= form.select :cf, [['太郎'], ['二郎']], { class: "form__CF" } %>
     <%= form.text_field :rwg, placeholder: :b, class: :form__RWG  %>
     <%= form.text_field :lwg, placeholder: :c, class: :form__LWG  %>
     <%= form.text_field :lcm, placeholder: :d, class: :form__LCM  %>

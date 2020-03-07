@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   resources :posts, only: [:new, :create, :show] do
     resources :likes, only: [:create, :destroy]
   end 
-
+  resources :images, only: [:index]
   root to: 'posts#index' 
 
 end
