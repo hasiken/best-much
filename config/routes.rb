@@ -5,6 +5,10 @@ Rails.application.routes.draw do
     collection do
       get 'short'
     end
+
+    collection do
+      get 'long'
+    end
     resources :likes, only: [:create, :destroy]
   end 
   resources :images, only: [:index]

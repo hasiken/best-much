@@ -1,9 +1,7 @@
 <div class="wrpper">
-  <div class="header">
-    <div class="top"></div>
     <div class="bottom">
       <div class="title">
-        <%= link_to("ManchesterUnited", "#", {class: "title__name"})%>
+        <%= link_to("My Best Eleven", "#", {class: "title__name"})%>
       </div>
       <div class="box">
         <% if user_signed_in? %>
@@ -26,19 +24,9 @@
         <% end %>
       </div>
     </div>
-  </div>
-<div class="best">
-<% if user_signed_in? %>
- <% @posts.each do |post|%>
-   <div class="main">
-    <div class="main__right">
+    <div class=home>~自分だけのベストイレブンをつくろう~</div>
+    <div>
+        <%= link_to "一覧", long_posts_path, class: "box__right--pic" %>
     </div>
-     <div class="main__left">
-       <%= link_to post.title, post_path(post.id), class: "main__left--item" %>
-     </div> 
-   </div>
- <% end %>
- <% else %> 
- <% end %>
-</div>
-</div>
+  </div>
+ 
