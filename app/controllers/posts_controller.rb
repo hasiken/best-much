@@ -26,6 +26,8 @@ class PostsController < ApplicationController
     @posts = Post.all
   end
 
+
+
   private
   def post_params 
     params.require(:post).permit(:title, :cf, :rwg, :lwg, :lcm, :rcm, :cdm, :rsb, :rcb, :lcb, :lsb, :gc).merge(user_id: current_user.id)
