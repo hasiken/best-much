@@ -137,8 +137,8 @@
     position: absolute;
     top: 15vh;
     left: 44%;
-    width: 950px;
-    border: 2px solid #ff9900; 
+    width: 150px;
+    border: 2px solid red; 
     z-index: 10;
     outline: 0;
   }
@@ -147,7 +147,7 @@
     top: 25vh;
     left: 27%;
     width: 150px;
-    border: 2px solid #ff9900; 
+    border: 2px solid red; 
     z-index: 10;
     outline: 0;
   }
@@ -156,7 +156,7 @@
     top: 25vh;
     right: 27%;
     width: 150px;
-    border: 2px solid #ff9900; 
+    border: 2px solid red; 
     z-index: 10;
     outline: 0;
   }
@@ -165,7 +165,7 @@
     top: 45vh;
     left: 27%;
     width: 150px;
-    border: 2px solid #ff9900; 
+    border: 2px solid red; 
     z-index: 10;
     outline: 0;
   }
@@ -174,7 +174,7 @@
     top: 45vh;
     right: 27%;
     width: 150px;
-    border: 2px solid #ff9900; 
+    border: 2px solid red; 
     z-index: 10;
     outline: 0;
   }
@@ -183,55 +183,55 @@
     top: 55vh;
     left: 44%;
     width: 150px;
-    border: 2px solid #ff9900; 
+    border: 2px solid red; 
     z-index: 10;
     outline: 0;
   }
   &__LSB{
     position: absolute;
-    top: 70vh;
-    left: 23%;
+    top: 65vh;
+    left: 21%;
     width: 150px;
-    border: 2px solid #ff9900; 
+    border: 2px solid red; 
     z-index: 10;
     outline: 0;
   }
   &__LCB{
     position: absolute;
-    top: 85vh;
+    top: 75vh;
     left: 30%;
     width: 150px;
-    border: 2px solid #ff9900; 
+    border: 2px solid red; 
     z-index: 10;
     outline: 0;
   }
 
   &__RCB{
     position: absolute;
-    top: 85vh;
+    top: 75vh;
     right: 30%;
     width: 150px;
-    border: 2px solid #ff9900; 
+    border: 2px solid red; 
     z-index: 10;
     outline: 0;
   }
 
   &__RSB{
     position: absolute;
-    top: 70vh;
-    right: 23%;
+    top: 65vh;
+    right: 21%;
     width: 150px;
-    border: 2px solid #ff9900; 
+    border: 2px solid red; 
     z-index: 10;
     outline: 0;
   }
 
   &__GC{
     position: absolute;
-    top: 93vh;
-    left: 45%;
+    top: 85vh;
+    left: 43%;
     width: 150px;
-    border: 2px solid #ff9900; 
+    border: 2px solid red; 
     z-index: 10;
     outline: 0;
   }
@@ -365,4 +365,200 @@
     text-align: center;
    }
   }
+}
+select {
+
+  /* styling */
+  background-color: white;
+  border: thin solid red;
+  border-radius: 4px;
+  display: inline-block;
+  font: inherit;
+  line-height: 1.5em;
+  padding: 0.5em 3.5em 0.5em 1em;
+
+  /* reset */
+
+  margin: 0;      
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+select.form__CF {
+  background-image:
+  linear-gradient(45deg, transparent 50%, red 50%),
+  linear-gradient(135deg, red 50%, transparent 50%),
+  // radial-gradient(red 70%, transparent 72%)
+  ;
+background-position:
+  calc(100% - 20px) calc(1em + 2px),
+  calc(100% - 15px) calc(1em + 2px),
+  calc(100% - .5em) .5em;
+background-size:
+  5px 5px,
+  5px 5px,
+  1.5em 1.5em;
+background-repeat: no-repeat;
+}
+select.form__RWG {
+  background-image:
+  linear-gradient(45deg, transparent 50%, red 50%),
+  linear-gradient(135deg, red 50%, transparent 50%),
+  // radial-gradient(red 70%, transparent 72%)
+  ;
+background-position:
+  calc(100% - 20px) calc(1em + 2px),
+  calc(100% - 15px) calc(1em + 2px),
+  calc(100% - .5em) .5em;
+background-size:
+  5px 5px,
+  5px 5px,
+  1.5em 1.5em;
+background-repeat: no-repeat;
+}
+select.form__LWG {
+  background-image:
+  linear-gradient(45deg, transparent 50%, red 50%),
+  linear-gradient(135deg, red 50%, transparent 50%),
+  // radial-gradient(red 70%, transparent 72%)
+  ;
+background-position:
+  calc(100% - 20px) calc(1em + 2px),
+  calc(100% - 15px) calc(1em + 2px),
+  calc(100% - .5em) .5em;
+background-size:
+  5px 5px,
+  5px 5px,
+  1.5em 1.5em;
+background-repeat: no-repeat;
+}
+select.form__LCM {
+  background-image:
+  linear-gradient(45deg, transparent 50%, red 50%),
+  linear-gradient(135deg, red 50%, transparent 50%),
+  // radial-gradient(red 70%, transparent 72%)
+  ;
+background-position:
+  calc(100% - 20px) calc(1em + 2px),
+  calc(100% - 15px) calc(1em + 2px),
+  calc(100% - .5em) .5em;
+background-size:
+  5px 5px,
+  5px 5px,
+  1.5em 1.5em;
+background-repeat: no-repeat;
+}
+select.form__RCM {
+  background-image:
+  linear-gradient(45deg, transparent 50%, red 50%),
+  linear-gradient(135deg, red 50%, transparent 50%),
+  // radial-gradient(red 70%, transparent 72%)
+  ;
+background-position:
+  calc(100% - 20px) calc(1em + 2px),
+  calc(100% - 15px) calc(1em + 2px),
+  calc(100% - .5em) .5em;
+background-size:
+  5px 5px,
+  5px 5px,
+  1.5em 1.5em;
+background-repeat: no-repeat;
+}
+select.form__CDM {
+  background-image:
+  linear-gradient(45deg, transparent 50%, red 50%),
+  linear-gradient(135deg, red 50%, transparent 50%),
+  // radial-gradient(red 70%, transparent 72%)
+  ;
+background-position:
+  calc(100% - 20px) calc(1em + 2px),
+  calc(100% - 15px) calc(1em + 2px),
+  calc(100% - .5em) .5em;
+background-size:
+  5px 5px,
+  5px 5px,
+  1.5em 1.5em;
+background-repeat: no-repeat;
+}
+select.form__LSB {
+  background-image:
+  linear-gradient(45deg, transparent 50%, red 50%),
+  linear-gradient(135deg, red 50%, transparent 50%),
+  // radial-gradient(red 70%, transparent 72%)
+  ;
+background-position:
+  calc(100% - 20px) calc(1em + 2px),
+  calc(100% - 15px) calc(1em + 2px),
+  calc(100% - .5em) .5em;
+background-size:
+  5px 5px,
+  5px 5px,
+  1.5em 1.5em;
+background-repeat: no-repeat;
+}
+select.form__LCB {
+  background-image:
+  linear-gradient(45deg, transparent 50%, red 50%),
+  linear-gradient(135deg, red 50%, transparent 50%),
+  // radial-gradient(red 70%, transparent 72%)
+  ;
+background-position:
+  calc(100% - 20px) calc(1em + 2px),
+  calc(100% - 15px) calc(1em + 2px),
+  calc(100% - .5em) .5em;
+background-size:
+  5px 5px,
+  5px 5px,
+  1.5em 1.5em;
+background-repeat: no-repeat;
+}
+select.form__RCB{
+  background-image:
+  linear-gradient(45deg, transparent 50%, red 50%),
+  linear-gradient(135deg, red 50%, transparent 50%),
+  // radial-gradient(red 70%, transparent 72%)
+  ;
+background-position:
+  calc(100% - 20px) calc(1em + 2px),
+  calc(100% - 15px) calc(1em + 2px),
+  calc(100% - .5em) .5em;
+background-size:
+  5px 5px,
+  5px 5px,
+  1.5em 1.5em;
+background-repeat: no-repeat;
+}
+select.form__RSB {
+  background-image:
+  linear-gradient(45deg, transparent 50%, red 50%),
+  linear-gradient(135deg, red 50%, transparent 50%),
+  // radial-gradient(red 70%, transparent 72%)
+  ;
+background-position:
+  calc(100% - 20px) calc(1em + 2px),
+  calc(100% - 15px) calc(1em + 2px),
+  calc(100% - .5em) .5em;
+background-size:
+  5px 5px,
+  5px 5px,
+  1.5em 1.5em;
+background-repeat: no-repeat;
+}
+select.form__GC {
+  background-image:
+  linear-gradient(45deg, transparent 50%, red 50%),
+  linear-gradient(135deg, red 50%, transparent 50%),
+  // radial-gradient(red 70%, transparent 72%)
+  ;
+background-position:
+  calc(100% - 20px) calc(1em + 2px),
+  calc(100% - 15px) calc(1em + 2px),
+  calc(100% - .5em) .5em;
+background-size:
+  5px 5px,
+  5px 5px,
+  1.5em 1.5em;
+background-repeat: no-repeat;
 }
