@@ -2,14 +2,17 @@ class LikesController < ApplicationController
   
   
   def create
-    @like = current_user.likes.create(post_id: params[:post_id])
-    redirect_to root_path
+    @like = Like.new(user_id: @current_user.id, post_id: params[:post_id])
+    @like.save
+    @post = Post.find_by(id: @like.post_id)
+    @like_count = Like.where(post_id: params[:post_id]).count
   end
 
   def destroy
-    @like = Like.find_by(post_id: params[:post_id], user_id: current_user.id)
+    @like = Like.find_by(user_id: @current_user.id, food_id: params[:food_id])
+    @post = Food.find_by(id: @like.post_id)
     @like.destroy
-    redirect_to root_path
+    @like_count = Like.where(post_id: params[:post_id]).count
   end
 
 
