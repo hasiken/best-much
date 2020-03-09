@@ -3,17 +3,17 @@
  </div>
  <%= form_with model: @post, class: :form,local: true do |form| %>
     <%= form.text_field :title, placeholder: :タイトルを入力してください,class: :form__top%>
-    <%= form.select :cf, [['太郎'], ['二郎']], { class: "form__CF" } %>
-    <%= form.text_field :rwg, placeholder: :b, class: :form__RWG  %>
-    <%= form.text_field :lwg, placeholder: :c, class: :form__LWG  %>
-    <%= form.text_field :lcm, placeholder: :d, class: :form__LCM  %>
-    <%= form.text_field :rcm, placeholder: :f, class: :form__RCM  %>
-    <%= form.text_field :cdm, placeholder: :g, class: :form__CDM  %>
-    <%= form.text_field :lsb, placeholder: :h, class: :form__LSB  %>
-    <%= form.text_field :rcb, placeholder: :i, class: :form__RCB  %>
-    <%= form.text_field :lcb, placeholder: :j, class: :form__LCB  %>
-    <%= form.text_field :rsb, placeholder: :k, class: :form__RSB  %>
-    <%= form.text_field :gc, placeholder: :l, class: :form__GC %>
+    <%= form.select :cf, [['太郎'], ['二郎']],{}, { class: "form__CF" } %>
+    <%= form.select :rwg, [['太郎'], ['二郎']],{}, { class: "form__RWG" } %>
+    <%= form.select :lwg, [['太郎'], ['二郎']],{},{ class: "form__LWG" } %>
+    <%= form.select :lcm, [['太郎'], ['二郎']],{}, { class: "form__LCM" } %>
+    <%= form.select :rcm, [['太郎'], ['二郎']],{}, { class: "form__RCM" } %>
+    <%= form.select :cdm, [['太郎'], ['二郎']],{}, { class: "form__CDM" } %>
+    <%= form.select :lsb, [['太郎'], ['二郎']],{}, { class: "form__LSB" } %>
+    <%= form.select :rcb, [['太郎'], ['二郎']],{}, { class: "form__RCB" } %>
+    <%= form.select :lcb, [['太郎'], ['二郎']],{}, { class: "form__LCB" } %>
+    <%= form.select :rsb, [['太郎'], ['二郎']],{}, { class: "form__RSB" } %>
+    <%= form.select :gc, [['太郎'], ['二郎']],{}, { class: "form__GC" } %>
     <%= form.submit "投稿する", class: :form__send%>
   <% end %>
 </div>
