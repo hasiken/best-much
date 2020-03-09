@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   devise_for :users
   resources :users, only: [:show]
   resources :posts, only: [:new, :create, :show] do
+    resources :likes, only: [:create, :destroy]
     collection do
       get 'short'
     end
@@ -9,7 +10,6 @@ Rails.application.routes.draw do
     collection do
       get 'long'
     end
-    resources :likes, only: [:create, :destroy]
   end 
   resources :images, only: [:index]
   root to: 'posts#index' 
