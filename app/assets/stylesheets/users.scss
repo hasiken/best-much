@@ -1,3 +1,45 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+* {
+  box-sizing: border-box;
+}
+.contens{
+  width: 100%;
+  height: 100vh;
+  background-color: red;
+  &__header{
+    width: 100%;
+    height: 120px;
+    background-color: blue;
+  }
+  &__main{
+    width: 100%;
+    height: calc(100vh - 120px);
+    background-color: yellow;
+    padding: 80px 125px ;
+    .title-list{
+      background-color: red;
+      height: 500px;
+      width: 850px;
+      &__top{
+       height: 80px;
+       background-color: blue;
+      }
+      &__bottom{
+         width: 850px;
+         height: 420px;
+         background-color: black;
+         padding: 60px 70px 60px 70px;
+         overflow: scroll;
+        &--item{
+          background-color: green;
+          border: solid 1px;
+          height: 70px;
+          width: 700px;
+
+        }
+      }
+    }
+  }
+}
