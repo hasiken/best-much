@@ -10,6 +10,10 @@ Rails.application.routes.draw do
     collection do
       get 'long'
     end
+
+    collection do
+      get 'middle'
+    end
   end 
   resources :images, only: [:index]
   root to: 'posts#index' 
