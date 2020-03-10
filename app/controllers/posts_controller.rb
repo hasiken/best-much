@@ -26,6 +26,10 @@ class PostsController < ApplicationController
     @posts = Post.includes(:user).order("created_at DESC").page(params[:page]).per(5)
   end
 
+  def middle
+    @player_ranks = Post.group(:cf).order('count_cf DESC').count(:cf)
+  end
+
 
 
   private
