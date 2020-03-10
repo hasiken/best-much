@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+.header{
+  height: 80px;
+  background-color: red;
+  width: 100%;
+}
+.main{
+  height: calc(100vh - 80px);
+  width: 100%;
+  background-color: blue;
+  display: flex;
+  &__left{
+    background-color: yellow;
+    width: 50%;
+    height: calc(100vh - 80px);
+    background-image: url(ken.jpg);
+    background-size: 710px 710px;
+  }
+  &__right{
+    background-color: white;
+    width: 50%;
+    height: calc(100vh - 80px);
+  }
+}

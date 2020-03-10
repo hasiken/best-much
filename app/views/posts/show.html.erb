@@ -1,62 +1,47 @@
-<div class="warpper">
-  <div class="soccer">
-  <%= link_to("トップページに戻る", root_path, {class: "title-name"})%>
- </div>
- <div class="goal">
-    <div class= "goal__AA">
-      <%= @post.cf %>
-    </div>
-    <div class= "goal__BB">
-      <%= @post.rwg %>
-    </div>
-    <div class= "goal__CC">
-      <%= @post.lwg %>
-    </div>
-    <div class= "goal__DD">
-      <%= @post.lcm %>
-    </div>
-    <div class= "goal__EE">
-      <%= @post.rcm %>
-    </div>
-    <div class= "goal__FF">
-      <%= @post.cdm %>
-    </div>
-    <div class= "goal__GG">
-      <%= @post.lsb %>
-    </div>
-     <div class= "goal__HH">
-      <%= @post.rcb %>
-    </div>
-    <div class= "goal__II">
-      <%= @post.lcb %>
-    </div>
-     <div class= "goal__KK">
-      <%= @post.rsb %>
-    </div>
-     <div class= "goal__LL">
-      <%= @post.gc %>
-    </div>
-  </div>
-<h3>いいね件数: <%= @post.likes.count %></h3>
-<% if current_user.likes.find_by(post_id: @post.id) %>
-  <%= link_to "いいね解除", post_like_path(@post), method: :delete %>
-<% else %>
-  <%= link_to "いいね", post_likes_path(@post), method: :post %>
-<% end %>
-<h2>いいねしたユーザー</h2>
-<% @post.liked_users.each do |user| %>
-  <li><%= user.nickname %></li>
-<% end %>
-<div class="container">
-    <% if current_user %>
-      <%= form_with(model: [@post, @comment], local: true) do |form| %>
-        <%= form.text_area :text, placeholder: "コメントする", rows: "2" %>
-        <%= form.submit "SEND" %>
-      <% end %>
-    <% else %>
-      <strong><p>※※※ コメントの投稿には新規登録/ログインが必要です ※※※</p></strong>
-    <% end %>
-  <div class="comments">
+<div class="header">
+</div>
+<div class="main">
+  <div class="main__left">
+    <div class="goal">
+      <div class= "goal__AA">
+        <%= @post.cf %>
+      </div>
+      <div class= "goal__BB">
+        <%= @post.rwg %>
+      </div>
+      <div class= "goal__CC">
+        <%= @post.lwg %>
+      </div>
+      <div class= "goal__DD">
+        <%= @post.lcm %>
+      </div>
+      <div class= "goal__EE">
+        <%= @post.rcm %>
+      </div>
+      <div class= "goal__FF">
+        <%= @post.cdm %>
+      </div>
+      <div class= "goal__GG">
+        <%= @post.lsb %>
+      </div>
+      <div class= "goal__HH">
+        <%= @post.rcb %>
+      </div>
+      <div class= "goal__II">
+        <%= @post.lcb %>
+      </div>
+      <div class= "goal__KK">
+        <%= @post.rsb %>
+      </div>
+      <div class= "goal__LL">
+        <%= @post.gc %>
+      </div>
+   </div>
+   </div>
+  <div class="main__right">
+    <div class="main__right--top"></div>
+    <div class="main__right--main">
+      <div class="comments">
       <h4>＜コメント一覧＞</h4>
       <% if @comments %>
         <% @comments.each do |comment| %>
@@ -67,5 +52,16 @@
         <% end %>
       <% end %>
     </div>
+    </div>
+    <div class="main__right--comment">
+        <% if current_user %>
+      <%= form_with(model: [@post, @comment], local: true) do |form| %>
+        <%= form.text_area :text, placeholder: "コメントする", rows: "2" %>
+        <%= form.submit "SEND" %>
+      <% end %>
+    <% else %>
+      <strong><p>※※※ コメントの投稿には新規登録/ログインが必要です ※※※</p></strong>
+    <% end %>
+    </div>
   </div>
-  
+</div>
