@@ -1,14 +1,45 @@
-<div class="contens">
-  <p><%= @nickname %>さんの投稿一覧</p>
 
-  <% @posts.each do |post| %>
-    <div class="content-post">
-      <%= link_to post.title, post_path(post.id), class: "content-post__right" %>
-    <div >
- </div>
-  <% end %>
-  <% @user.liked_posts.each do |post| %>
-  <%= post.user.nickname %>
+  <div class="contens__header"></div>
+  <div class="contens__main">
+    <div class=title-list>
+      <div class=title-list__top>
+        <%= @nickname %>さんの投稿一覧
+      </div>
+      <div class=title-list__bottom>
+       <% @posts.each do |post| %>
+      <div class=title-list__bottom--item>
+        <%= link_to post.title, post_path(post.id), class: "content-post__right" %>
+        </div>
+      <% end %>
+      </div>
+    </div>
+  </div>
 
-  <% end %>
-<div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+<%#   
+  /<p><%= @nicknameさんの投稿一覧</p> %>
+  <%# <% @posts.each do |post| %> 
+    <%# <div class="title-list"> %>
+      <%# <%= link_to post.title, post_path(post.id), class: "content-post__right" %> 
+    <%# <div > %>
+ <%# </div> %>
+  <%# <% end %> 
+  <%# <% @user.liked_posts.each do |post| %> 
+  <%# <%= post.user.nickname %> 
+
+  <%# <% end %> 
+  <%# </div> %> 

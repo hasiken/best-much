@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   resources :users, only: [:show]
   resources :posts, only: [:new, :create, :show] do
     resources :likes, only: [:create, :destroy]
+    resources :comments, only: :create
     collection do
       get 'short'
     end
