@@ -23,5 +23,58 @@
     background-color: white;
     width: 50%;
     height: calc(100vh - 80px);
+    &--top{
+     background-color: blue;
+     height: 80px;
+    }
+    &--main{
+      height: 400px;
+      background-color: yellow;
+      padding: 25px 60px;
+      .comments{
+        height: 350px;
+        width: 600px;
+        background-color: yellowgreen;
+        padding: 0px 30px;
+        overflow: scroll;
+        &__box{
+          position: relative;
+          margin: 1.5em 0;
+          padding: 7px 10px;
+          min-width: 120px;
+          max-width: 100%;
+          color: #555;
+          font-size: 16px;
+          background: #FFF;
+          border: solid 3px #555;
+          box-sizing: border-box;
+        }
+        &__box:before{
+          content: "";
+          position: absolute;
+          bottom: -24px;
+          left: 50%;
+          margin-left: -15px;
+          border: 12px solid transparent;
+          border-top: 12px solid #FFF;
+          z-index: 2;
+        }
+        &__box:after{
+          content: "";
+          position: absolute;
+          bottom: -30px;
+          left: 50%;
+          margin-left: -17px;
+          border: 14px solid transparent;
+          border-top: 14px solid #555;
+          z-index: 1;
+        }
+        
+      }
+    }
+    &--comment{
+      height: calc(100vh - 560px);
+      background-color: red;
+    }
   }
 }
