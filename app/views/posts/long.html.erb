@@ -1,10 +1,10 @@
 <div class="best">
  <% @posts.each do |post| %>
-   <div class="main">
-    <div class="main__right">
+   <div class="item">
+    <div class="item__right">
     </div>
-     <div class="main__left">
-       <%= link_to post.title, post_path(post.id), class: "main__left--item" %>
+     <div class="item__left">
+       <%= link_to post.title, post_path(post.id), class: "item__left--box" %>
      </div> 
    </div>
  <% end %>
