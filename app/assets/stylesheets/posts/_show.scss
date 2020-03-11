@@ -23,5 +23,17 @@
     background-color: white;
     width: 50%;
     height: calc(100vh - 80px);
+    &--top{
+      background-color: blue;
+      height: 70px;
+    }
+    &--main{
+      background-color: yellow;
+      height: 450px;
+    }
+    &--comment{
+      height: calc(100vh - 600px);
+      background-color: green;
+    }
   }
 }
