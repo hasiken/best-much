@@ -1,19 +1,33 @@
-
-
-  <div class="contens__header"></div>
-  <div class="contens__main">
-    <div class=title-list>
-      <div class=title-list__top>
-        <%= @nickname %>の投稿一覧
+ <div class="contens">
+      <div class="contens__header">
+        <div class="test">
+          <div class="test__left">
+            <%= link_to "New Post", new_post_path, class: "test__left--item" %>
+          </div>
+          <div class="test__main">
+            <%= link_to "My page", "/users/#{current_user.id}", class: "test__main--pege" %>
+          </div>
+          <div class="test__show">
+             <%= link_to "Top page", root_path, class: "test__show--top" %>
+          </div>
+       </div>
+      
       </div>
-      <div class=title-list__bottom>
-       <% @posts.each do |post| %>
-      <div class=title-list__bottom--item>
-        <%= link_to post.title, post_path(post.id), class: "content-post__right" %>
+      <div class="contens__main">
+        <div class=title-list>
+          <div class=title-list__top>
+            <%= @nickname %>
+          </div>
+          <div class=title-list__bottom>
+          <% @posts.each do |post| %>
+          <div class=title-list__bottom--item>
+            <span class="title-tab2">タイトル   </span>
+            <%= link_to post.title, post_path(post.id), class: "post" %>
+            </div>
+          <% end %>
+          </div>
         </div>
-      <% end %>
       </div>
-    </div>
   </div>
   
   

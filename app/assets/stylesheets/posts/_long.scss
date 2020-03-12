@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 .go{
-  background-image: url(https://cdn.pixabay.com/photo/2017/01/06/22/48/old-trafford-1959155_1280.jpg);
+  background-image: url(tarou.jpg);
   background-size: cover;
   height: 100vh;
   width: 100%;
@@ -25,7 +25,6 @@
        font-size: 25px;
        line-height: 100px;
        font-family: 'Teko', sans-serif;
-       
      }
     }
     &__main{
@@ -39,7 +38,6 @@
        font-size: 25px;
        font-family: 'Teko', sans-serif;
      }
-
     }
     &__show{
       width: 200px;
@@ -52,14 +50,13 @@
        font-size: 25px;
        font-family: 'Teko', sans-serif;
       }
-
     }
   }
 }
 .best{
   width: 100%;
   height: calc(100vh - 120px);
-  padding: 80px 270px ;
+  padding: 0px 270px ;
   .test{
     background-color: red;
     height: 500px;
