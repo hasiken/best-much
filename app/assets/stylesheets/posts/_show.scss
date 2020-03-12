@@ -18,6 +18,119 @@
     height: calc(100vh - 80px);
     background-image: url(ken.jpg);
     background-size: 710px 710px;
+    .goal{
+      &__AA{
+      position: absolute;
+      top: 25vh;
+      left: 20%;
+      width: 150px;
+      border: 2px solid #ff9900; 
+      z-index: 10;
+      outline: 0;
+      text-align: center;
+      }
+      &__BB{
+        position: absolute;
+      top: 35vh;
+      left: 5%;
+      width: 150px;
+      border: 2px solid #ff9900; 
+      z-index: 10;
+      outline: 0;
+      text-align: center;
+      }
+      &__CC{
+        position: absolute;
+        top: 35vh;
+        right: 55%;
+        width: 150px;
+        border: 2px solid #ff9900; 
+        z-index: 10;
+        outline: 0;
+        text-align: center;
+      }
+      &__DD{
+        position: absolute;
+        top: 55vh;
+        left: 10%;
+        width: 150px;
+        border: 2px solid #ff9900; 
+        z-index: 10;
+        outline: 0;
+        text-align: center;
+      }
+      &__EE{
+        position: absolute;
+        top: 55vh;
+        right: 60%;
+        width: 150px;
+        border: 2px solid #ff9900; 
+        z-index: 10;
+        outline: 0;
+        text-align: center;
+      }
+      &__FF{
+        position: absolute;
+        top: 45vh;
+        left: 20%;
+        width: 150px;
+        border: 2px solid #ff9900; 
+        z-index: 10;
+        outline: 0;
+        text-align: center;
+      }
+      &__GG{
+        position: absolute;
+        top: 70vh;
+        left: 5%;
+        width: 150px;
+        border: 2px solid #ff9900; 
+        z-index: 10;
+        outline: 0;
+        text-align: center;
+      }
+      &__HH{
+        position: absolute;
+      top: 85vh;
+      left: 12%;
+      width: 150px;
+      border: 2px solid #ff9900; 
+      z-index: 10;
+      outline: 0;
+      text-align: center;
+      }
+      &__II{
+      position: absolute;
+      top: 85vh;
+      right: 62%;
+      width: 150px;
+      border: 2px solid #ff9900; 
+      z-index: 10;
+      outline: 0;
+      text-align: center;
+    }
+     &__KK{
+      position: absolute;
+      top: 70vh;
+      right: 55%;
+      width: 150px;
+      border: 2px solid #ff9900; 
+      z-index: 10;
+      outline: 0;
+      text-align: center;
+     }
+     &__LL{
+      position: absolute;
+      top: 93vh;
+      left: 20%;
+      width: 150px;
+      border: 2px solid #ff9900; 
+      z-index: 10;
+      outline: 0;
+      text-align: center;
+     }
+    }
+    
   }
   &__right{
     background-color: white;

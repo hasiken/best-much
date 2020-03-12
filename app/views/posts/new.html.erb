@@ -3,10 +3,10 @@
  </div>
  <%= form_with model: @post, class: :form,local: true do |form| %>
     <%= form.text_field :title, placeholder: :タイトルを入力してください,class: :form__top%>
-    <%= form.select :cf, [['太郎'], ['二郎']],{}, { class: "form__CF" } %>
-    <%= form.select :rwg, [['太郎'], ['二郎']],{}, { class: "form__RWG" } %>
-    <%= form.select :lwg, [['太郎'], ['二郎']],{},{ class: "form__LWG" } %>
-    <%= form.select :lcm, [['太郎'], ['二郎']],{}, { class: "form__LCM" } %>
+    <%= form.select :cf, [['9 MARTIAL'], ['10 RASHFORD'],['26 GREENWOOD'],['44 CHONG'],['21 JAMES'],['20 DALOT'],['8 MATA']],{}, { class: "form__CF" } %>
+    <%= form.select :rwg, [['9 MARTIAL'], ['10 RASHFORD'],['26 GREENWOOD'],['44 CHONG'],['21 JAMES'],['20 DALOT'],['8 MATA']],{}, { class: "form__RWG" } %>
+    <%= form.select :lwg, [['9 MARTIAL'], ['10 RASHFORD'],['26 GREENWOOD'],['44 CHONG'],['21 JAMES'],['20 DALOT'],['8 MATA']],{},{ class: "form__LWG" } %>
+    <%= form.select :lcm, [['8 Juan MATA'], ['6 Paul POGBA'],['14 Jesse LINGARD'],['15 Andreas PEREIRA'],['17 FRED']],{}, { class: "form__LCM" } %>
     <%= form.select :rcm, [['太郎'], ['二郎']],{}, { class: "form__RCM" } %>
     <%= form.select :cdm, [['太郎'], ['二郎']],{}, { class: "form__CDM" } %>
     <%= form.select :lsb, [['太郎'], ['二郎']],{}, { class: "form__LSB" } %>

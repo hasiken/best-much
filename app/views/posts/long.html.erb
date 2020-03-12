@@ -1,13 +1,18 @@
+<div class="win">
+</div>
+<div class="lose">
+</div>
 <div class="best">
- <% @posts.each do |post| %>
-   <div class="main">
-    <div class="main__right">
+   <div class="test">
+    <div class="test__right">
     </div>
-     <div class="main__left">
-       <%= link_to post.title, post_path(post.id), class: "main__left--item" %>
+     <div class="test__left">
+       <% @posts.each do |post| %>
+         <div class="test__left--item">
+       <%= link_to post.title, post_path(post.id) %>
      </div> 
-   </div>
- <% end %>
- <%= paginate(@posts) %>
+     <% end %>
+     <%= paginate(@posts) %>
+     </div>      
  </div>
 
