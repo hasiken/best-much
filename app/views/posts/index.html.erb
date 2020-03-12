@@ -1,18 +1,19 @@
+
 <div class="wrpper">
     <div class="bottom">
-      <div class="title">
-        <%= link_to("My Best Eleven", "#", {class: "title__name"})%>
-      </div>
       <div class="box">
         <% if user_signed_in? %>
           <div class="box__left">
-            <%= link_to "新規投稿", new_post_path, class: "box__left--item" %>
+            <%= link_to "New Post", new_post_path, class: "box__left--item" %>
           </div>
           <div class="box__right">
-           <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "box__right--pic" %>
+           <%= link_to "Logout", destroy_user_session_path, method: :delete, class: "box__right--pic" %>
           </div>
           <div class="box__main">
-            <%= link_to "マイページ", "/users/#{current_user.id}", class: "box__main--pege" %>
+            <%= link_to "My page", "/users/#{current_user.id}", class: "box__main--pege" %>
+          </div>
+          <div class="box__show">
+             <%= link_to "List of posts", long_posts_path, class: "box__show--top" %>
           </div>
         <% else %>
           <div class="title__left">
@@ -24,9 +25,10 @@
         <% end %>
       </div>
     </div>
-    <div class=home>~自分だけのベストイレブンをつくろう~</div>
-    <div>
-        <%= link_to "一覧", long_posts_path, class: "box__right--pic" %>
-    </div>
+     <div class="title">
+        <%= link_to("ManChester United", "#", {class: "title__name"})%>
+          <div class="home">~My Best Eleven~</div>
+     </div>
+  
   </div>
- 
+   
