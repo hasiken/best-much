@@ -16,28 +16,39 @@
   &__main{
     width: 100%;
     height: calc(100vh - 120px);
-    background-color: yellow;
-    padding: 80px 270px ;
+    background-color: #f6f6f6f6;
+    padding: 90px 290px ;
     .title-list{
-      background-color: red;
+      background-color: white;
       height: 500px;
       width: 850px;
+      
       &__top{
-       height: 80px;
-       background-color: blue;
+        width: 850px;
+        height: 80px;
+        background-color: red;
+        text-align: center;
+        font-size: 30px;
+        vertical-align: middle;
+        line-height: 80px;
       }
       &__bottom{
          width: 850px;
          height: 420px;
-         background-color: black;
+         background-color: white;
          padding: 60px 70px 60px 70px;
          overflow: scroll;
         &--item{
-          background-color: green;
+          background-color: white;
           border: solid 1px;
           height: 70px;
           width: 700px;
-
+          font-size: 25px;
+          padding-left: 150px;
+          line-height: 70px;
+        }
+        a{
+          text-decoration: none;
         }
       }
     }
