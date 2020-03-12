@@ -1,7 +1,17 @@
-<div class="win">
-</div>
-<div class="lose">
-</div>
+<div class="go">
+  <div class="win">
+   <div class="post">
+          <div class="post__left">
+            <%= link_to "New Post", new_post_path, class: "post__left--item" %>
+          </div>
+          <div class="post__main">
+            <%= link_to "My page", "/users/#{current_user.id}", class: "post__main--pege" %>
+          </div>
+          <div class="post__show">
+             <%= link_to "Top page", root_path, class: "post__show--top" %>
+          </div>
+   </div>
+  </div>
 <div class="best">
    <div class="test">
     <div class="test__right">
@@ -15,4 +25,5 @@
      <%= paginate(@posts) %>
      </div>      
  </div>
+</div>
 
