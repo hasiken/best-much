@@ -25,7 +25,7 @@ class PostsController < ApplicationController
   end
 
   def long
-    @posts = Post.includes(:user).order("created_at DESC").page(params[:page]).per(5)
+    @posts = Post.includes(:user).order("created_at DESC").page(params[:page]).per(4)
   end
 
   def middle
