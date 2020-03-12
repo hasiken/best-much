@@ -8,15 +8,17 @@
   height: 100vh;
   width: 100%;
   position: fixed;
+  background-image: url(tarou.jpg);
+  background-size: cover;
   &__header{
-    height: 200px;
+    height: 100px;
     display: flex;
-    padding: 0px 0px 40px 650px;
+    padding: 0px 0px 40px 850px;
     justify-content: space-between;
     .test{
       background-color: black;
       height: 100px;
-      width: 800px;
+      width: 600px;
       display: flex;
       &__left{
        width: 200px;
@@ -29,6 +31,7 @@
         font-family: 'Teko', sans-serif;
       }
      }
+
      &__main{
        width: 200px;
      
@@ -58,17 +61,16 @@
   &__main{
     width: 100%;
     height: calc(100vh - 120px);
-    background-color: #f6f6f6f6;
-    padding: 90px 290px ;
+    padding: 0px 290px ;
     .title-list{
-      background-color: white;
+      padding-top: 50px;
       height: 500px;
       width: 850px;
       
       &__top{
         width: 850px;
         height: 80px;
-        background-color: red;
+        font-family: 'Oswald', sans-serif;
         text-align: center;
         font-size: 30px;
         vertical-align: middle;
@@ -77,20 +79,34 @@
       &__bottom{
          width: 850px;
          height: 420px;
-         background-color: white;
-         padding: 60px 70px 60px 70px;
+         padding: 30px 70px 60px 70px;
          overflow: scroll;
-        &--item{
-          background-color: white;
-          border: solid 1px;
-          height: 70px;
-          width: 700px;
-          font-size: 25px;
-          padding-left: 150px;
-          line-height: 70px;
-        }
+         &--item{
+          position: relative;
+          margin: 3em auto;
+          padding: 1.2em 1em 1em;
+          width: 70%;
+          background-color: #fff; /*BOX背景色 */
+          border: 2px solid #8d93c8; /* 枠線の太さ・色 */
+          box-shadow: 2px 2px 2px #ccc; 
+
+          .title-tab2 {
+            position: absolute;
+            display: inline-block;
+            top: -28px; /*タブ調整 */
+            left: -2px; /*タブ調整 */
+            padding: 1px 10px;
+            height: 26px;
+            font-weight: bold;
+            color: #fff; /* タイトル色 */
+            background-color: #8d93c8; /* タイトル背景色 */
+            border-radius: 8px 8px 0 0;
+            
+           }
+            }
         a{
           text-decoration: none;
+     
         }
       }
     }
