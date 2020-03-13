@@ -15,7 +15,8 @@
     </div>
 </div>
 <div class="main">
-  <div class="main__left">
+  <div class="main__left"></div>
+  <div class="main__middle">
     <div class="goal">
       <div class= "goal__AA">
         <%= @post.cf %>
@@ -51,41 +52,39 @@
         <%= @post.gc %>
       </div>
    </div>
-   </div>
-  <div class="main__right">
-    <div class="main__right--top">
-    いいね件数: <%= @post.likes.count %>
-        <% if current_user.likes.find_by(post_id: @post.id) %>
-          <%= link_to "いいね解除", post_like_path(@post), method: :delete %>
-        <% else %>
-          <%= link_to "いいね", post_likes_path(@post), method: :post %>
-        <% end %>
-        <%# <h2>いいねしたユーザー</h2> %>
-        <%# <% @post.liked_users.each do |user| %> 
-          <%# <li><%= user.nickname %></li> 
-        <%# <% end %> 
-    </div>
-    <div class="main__right--main">
-      <div class="comments">
-        <% if @comments %>
-           <% @comments.each do |comment| %>
-             <div class="comments__box">
-                  <strong><%= link_to comment.user.nickname, "/users/#{comment.user_id}" %>：</strong>
-                  <%= comment.text %>      
-             </div>
-           <% end %>
-        <% end %>
-    </div>
-    </div>
-    <div class="main__right--comment">
-        <% if current_user %>
-      <%= form_with(model: [@post, @comment], local: true, id: "new_comment") do |form| %>
-        <%= form.text_area :text, placeholder: "コメントする", rows: "2" , class: "textbox"%>
-        <%= form.submit "SEND", class: "form__submit" %>
-      <% end %>
-    <% else %>
-      <strong><p>※※※ コメントの投稿には新規登録/ログインが必要です ※※※</p></strong>
-    <% end %>
-    </div>
   </div>
+  <div class="main__right"></div>
 </div>
+<div class="bottom">
+    <div class=igaro></div>
+    <div class=dhea>
+      <div class=present>
+        <div class="comments">
+                <% if @comments %>
+                  <% @comments.each do |comment| %>
+                    <div class="comments__box">
+                          <strong><%= link_to comment.user.nickname, "/users/#{comment.user_id}" %>：</strong>
+                          <%= comment.text %>      
+                    </div>
+                  <% end %>
+                <% end %>
+        </div>
+      </div>
+      <div class=bottom__under>
+        <div class="find">
+                <% if current_user %>
+                <%= form_with(model: [@post, @comment], local: true, id: "new_comment") do |form| %>
+                  <%= form.text_area :text, placeholder: "コメントする", rows: "2" , class: "textbox"%>
+                  <%= form.submit "SEND", class: "form__submit" %>
+                <% end %>
+                <% else %>
+                <strong><p>※※※ コメントの投稿には新規登録/ログインが必要です ※※※</p></strong>
+                <% end %>
+        <div>
+      </div>
+   </div>
+</div>
+</div>
+<div class="mata"></div>
+</div>
+ 
