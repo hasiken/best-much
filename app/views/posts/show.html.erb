@@ -1,5 +1,18 @@
 <div class="header">
-    <%= link_to "My Best Eleven", root_path ,method: :get %>
+    <div class="line">
+          <div class="line__left">
+            <%= link_to "New Post", new_post_path, class: "line__left--item" %>
+          </div>
+           <div class="line__main">
+            <%= link_to "My page", "/users/#{current_user.id}", class: "line__main--pege" %>
+          </div>
+          <div class="line__show">
+             <%= link_to "List of posts", long_posts_path, class: "line__show--top" %>
+          </div>
+          <div class="line__right">
+             <%= link_to "Top page", root_path, class: "line__right--top" %>
+          </div>
+    </div>
 </div>
 <div class="main">
   <div class="main__left">
@@ -54,7 +67,6 @@
     </div>
     <div class="main__right--main">
       <div class="comments">
-
         <% if @comments %>
            <% @comments.each do |comment| %>
              <div class="comments__box">
