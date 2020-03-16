@@ -55,28 +55,36 @@
 }
 .best{
   width: 100%;
-  height: calc(100vh - 120px);
-  padding: 50px 270px ;
+  height: calc(100vh - 100px);
+  // padding: 50px 270px ;
+  display: flex;
+  .yoro{
+    height: calc(100vh - 100px);
+    width: 200px;
+    background-color: red;
+  }
   .test{
-    height: 500px;
-    width: 850px;
+    height: calc(100vh - 100px);
+    width: calc(100% - 100px);
     &__right{
       height: 40px;
       text-align: center;
+      padding-top: 80px
       // &--main{
       //   font-size: 15px;
       //   color: white;
       // }
     }  
     &__left{
-      width: 850px;
-      height: 420px;
-      padding: 30px 70px 60px 70px;
+      // width: calc(100% - 400px);
+      // height: calc(100vh - 100px);
+      padding-top: 80px;
+   
       &--item{
         position: relative;
         margin: 3em auto;
         padding: 1.2em 1em 1em;
-        width: 70%;
+        width: 50%;
         background-color: #fff; /*BOX背景色 */
         border: 2px solid red; /* 枠線の太さ・色 */
         box-shadow: 2px 2px 2px #ccc; 
@@ -96,6 +104,11 @@
     }
 
   }
+    .siku{
+      height: calc(100vh - 100px);
+      width: 200px;
+      background-color: red;
+    }
 }
 }
 a{
