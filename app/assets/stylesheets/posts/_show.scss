@@ -3,9 +3,43 @@
 }
 .header{
   height: 100px;
-  width: 50%;
-  padding-left: 850px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
   background-color: black;
+  .collect{
+    height: 100px;
+    width: 500px;
+    // background-color: black;
+    .hope{
+     padding: 35px 0px 40px 40px;
+     display: flex;
+     .star-btn-none{
+      color: yellow;
+      font-size: 30px;
+      }
+      .light{
+        font-size: 20px;
+        color: white;
+      }
+    }
+    .book{
+     padding: 35px 0px 40px 40px;
+     display: flex;
+      .goon{
+        color: white;
+      }
+      .star-btn{
+      color: white;
+      font-size: 30px;
+      }
+      .hotel{
+        font-size: 20px;
+        color: white;
+      }
+    }
+   
+  }
   .line{
     display: flex;
     background-color: black;
@@ -80,107 +114,119 @@
       top: 60vh;
       left: 65%;
       width: 150px;
-      border: 2px solid #ff9900; 
+      border: 2px solid red;
       z-index: 10;
       outline: 0;
       text-align: center;
+      background-color: white;
       }
       &__BB{
-        position: absolute;
-      top: 35vh;
-      left: 5%;
+      position: absolute;
+      top: 85vh;
+      left: 60%;
       width: 150px;
-      border: 2px solid #ff9900; 
+      border: 2px solid red; 
       z-index: 10;
       outline: 0;
       text-align: center;
+      background-color: white;
       }
       &__CC{
         position: absolute;
-        top: 35vh;
-        right: 55%;
+        top: 30vh;
+        left: 60%;
         width: 150px;
-        border: 2px solid #ff9900; 
+        border: 2px solid red; 
         z-index: 10;
         outline: 0;
         text-align: center;
+        background-color: white;
       }
       &__DD{
         position: absolute;
-        top: 55vh;
-        left: 10%;
+        top: 40vh;
+        left: 40%;
         width: 150px;
-        border: 2px solid #ff9900; 
+        border: 2px solid red; 
         z-index: 10;
         outline: 0;
         text-align: center;
+        background-color: white;
       }
       &__EE{
         position: absolute;
-        top: 55vh;
-        right: 60%;
+        top: 80vh;
+        left: 40%;
         width: 150px;
-        border: 2px solid #ff9900; 
+        border: 2px solid red; 
         z-index: 10;
         outline: 0;
         text-align: center;
+        background-color: white;
+
       }
       &__FF{
         position: absolute;
-        top: 45vh;
-        left: 20%;
+        top: 60vh;
+        left: 50%;
         width: 150px;
-        border: 2px solid #ff9900; 
+        border: 2px solid red; 
         z-index: 10;
         outline: 0;
         text-align: center;
+        background-color: white;
       }
       &__GG{
         position: absolute;
-        top: 70vh;
-        left: 5%;
+        top: 25vh;
+        left: 30%;
         width: 150px;
-        border: 2px solid #ff9900; 
+        border: 2px solid red; 
+        background-color: white;
         z-index: 10;
         outline: 0;
         text-align: center;
       }
       &__HH{
-        position: absolute;
-      top: 85vh;
-      left: 12%;
+      position: absolute;
+      top: 45vh;
+      left: 25%;
       width: 150px;
-      border: 2px solid #ff9900; 
+      border: 2px solid red; 
+      background-color: white;
       z-index: 10;
       outline: 0;
       text-align: center;
       }
       &__II{
       position: absolute;
-      top: 85vh;
-      right: 62%;
+      top: 75vh;
+      left: 25%;
       width: 150px;
-      border: 2px solid #ff9900; 
+      border: 2px solid red; 
+      background-color: white;
       z-index: 10;
       outline: 0;
       text-align: center;
     }
      &__KK{
       position: absolute;
-      top: 70vh;
-      right: 55%;
+      top: 90vh;
+      right: 60%;
       width: 150px;
-      border: 2px solid #ff9900; 
+      border: 2px solid red; 
+      background-color: white;
       z-index: 10;
       outline: 0;
       text-align: center;
      }
      &__LL{
       position: absolute;
-      top: 93vh;
-      left: 20%;
+      top: 60vh;
+      left: 15%;
       width: 150px;
-      border: 2px solid #ff9900; 
+      border: 2px solid red; 
+      background-color: white;
       z-index: 10;
       outline: 0;
       text-align: center;

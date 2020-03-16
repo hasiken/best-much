@@ -1,5 +1,44 @@
-<div>
-<% @all_ranks.each do |post|%>
-<%= link_to post.title, post_path(post.id)%>
-<% end %>
+<div class="time">
+  <div class="wan">
+          <div class="wan__left">
+            <%= link_to "New Post", new_post_path, class: "wan__left--item" %>
+          </div>
+           <div class="wan__main">
+            <%= link_to "My page", "/users/#{current_user.id}", class: "wan__main--pege" %>
+          </div>
+          <div class="wan__show">
+             <%= link_to "List of posts", long_posts_path, class: "wan__show--top" %>
+          </div>
+          <div class="wan__right">
+             <%= link_to "Top page", root_path, class: "wan__right--top" %>
+          </div>
+  </div>
+  <div class="bisaka">
+           <div class="bisaka__left"></div>
+           <div class="bisaka__main">
+             <div class="bisaka__main--item">
+                    <% @all_ranks.each do |post|%>
+                      <div class="join">
+                      <%= link_to post.title, post_path(post.id)%>
+                      </div>
+                    <% end %>
+             </div>
+           </div>
+           <div class="bisaka__right"></div>
+  
+  </div>
+
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+

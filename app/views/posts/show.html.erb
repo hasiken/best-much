@@ -1,4 +1,23 @@
 <div class="header">
+    <div class="collect">
+        <% if current_user.likes.find_by(post_id: @post.id) %>
+          <%= link_to  post_like_path(@post), method: :delete do %>
+          <div class="hope">
+              <div class="light">お気に入りに解除する</div>
+              <span class="fa fa-star star-btn-none"><%=@post.likes.count %></span>
+          </div>
+          <% end %>
+        <% else %>
+          <%= link_to  post_likes_path(@post), method: :post do %>
+          <div class="book">
+              <div class="hotel">お気に入りに登録する</div>
+              <span class="fa fa-star star-btn"><%=@post.likes.count %></span>
+               
+              
+          </div>
+          <% end %>
+        <% end %>
+    </div>
     <div class="line">
           <div class="line__left">
             <%= link_to "New Post", new_post_path, class: "line__left--item" %>
