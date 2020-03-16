@@ -72,59 +72,69 @@
      }
    }
   }
-  
-  &__main{
+  .google{
+    height: calc(100vh - 100px);
     width: 100%;
-    height: calc(100vh - 120px);
-    padding: 0px 290px ;
+    display: flex;
+  &__left{
+    width: 200px;
+    height: calc(100vh - 100px);
+    background-color: red;
+
+  }
+  &__right{
+    width: 200px;
+    height: calc(100vh - 100px);
+    background-color: red;
+  }
+  &__main{
+    width: calc(100% - 400px);
+    height: calc(100vh - 100px);
     .title-list{
-      padding-top: 50px;
-      height: 500px;
-      width: 850px;
+        padding-top: 50px;
+    
       
       &__top{
-        width: 850px;
-        height: 80px;
         font-family: 'Oswald', sans-serif;
         text-align: center;
         font-size: 30px;
         vertical-align: middle;
         line-height: 80px;
       }
-      &__bottom{
-         width: 850px;
-         height: 420px;
-         padding: 30px 70px 60px 70px;
-         overflow: scroll;
-         &--item{
-          position: relative;
-          margin: 3em auto;
-          padding: 1.2em 1em 1em;
-          width: 70%;
-          background-color: #fff; /*BOX背景色 */
-          border: 2px solid red; /* 枠線の太さ・色 */
-          box-shadow: 2px 2px 2px #ccc; 
-
-          .title-tab2 {
-            position: absolute;
-            display: inline-block;
-            top: -28px; /*タブ調整 */
-            left: -2px; /*タブ調整 */
-            padding: 1px 10px;
-            height: 26px;
-            font-weight: bold;
-            color: #fff; /* タイトル色 */
-            background-color: red; /* タイトル背景色 */
-            border-radius: 8px 8px 0 0;
-            
-           }
-            }
-        a{
-          text-decoration: none;
-          color: black;
-     
-        }
-      }
+                &__bottom{
+             
+                  padding: 30px 70px 60px 70px;
+                  overflow: scroll;
+                  &--item{
+                    position: relative;
+                    margin: 3em auto;
+                    padding: 1.2em 1em 1em;
+                    width: 50%;
+                    background-color: #fff; /*BOX背景色 */
+                    border: 2px solid red; /* 枠線の太さ・色 */
+                    box-shadow: 2px 2px 2px #ccc; 
+                  .title-tab2 {
+                    position: absolute;
+                    display: inline-block;
+                    top: -28px; /*タブ調整 */
+                    left: -2px; /*タブ調整 */
+                    padding: 1px 10px;
+                    height: 26px;
+                    font-weight: bold;
+                    color: #fff; /* タイトル色 */
+                    background-color: red; /* タイトル背景色 */
+                    border-radius: 8px 8px 0 0;
+                    
+                  }
+                 }
+                a{
+                  text-decoration: none;
+                  color: black;
+                }
+      
+               }
     }
+    }
+   
   }
 }

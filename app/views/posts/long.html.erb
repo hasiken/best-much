@@ -13,6 +13,7 @@
    </div>
   </div>
 <div class="best">
+  <div class="yoro"></div>
    <div class="test">
     <div class="test__right">
     <div class="text__right--main">List of Posts</div>
@@ -24,8 +25,10 @@
        <%= link_to post.title, post_path(post.id) %>
      </div> 
      <% end %>
+
      <%= paginate(@posts) %>
-     </div>      
+     </div>     
  </div>
+    <div class="siku"></div>
 </div>
 
