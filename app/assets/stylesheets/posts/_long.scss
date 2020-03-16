@@ -9,8 +9,9 @@
   position: fixed;
 .win{
   display: flex;
-  padding: 0px 0px 40px 870px;
+  padding: 0px 0px 0px 870px;
   justify-content: space-between;
+  background-color: black;
   .post{
     background-color: black;
     height: 100px;
@@ -55,7 +56,7 @@
 .best{
   width: 100%;
   height: calc(100vh - 120px);
-  padding: 0px 270px ;
+  padding: 50px 270px ;
   .test{
     height: 500px;
     width: 850px;
