@@ -19,6 +19,7 @@
              <div class="bisaka__main--item">
                     <% @all_ranks.each do |post|%>
                       <div class="join">
+                      <span class="title-tab2">タイトル </span>
                       <%= link_to post.title, post_path(post.id)%>
                       </div>
                     <% end %>
