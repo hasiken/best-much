@@ -72,18 +72,34 @@
         width: calc(100% - 400px);
         height: calc(100vh - 100px);
         background-image: url(kentarouhasi.jpg);
-      
+        padding: 30px 70px 60px 300px;
         &--item{
-          width: 1040px;
-          height: calc(100vh - 100px);
-          border: solid 1px;
-          padding: 50px;
+          text-align: center;
+          padding-top: 80px;
+          width: 400px;
+          height: 63px;
           .join{
-
-            font-size: 30px;
+            position: relative;
+            margin: 3em auto;
+            padding: 1.2em 1em 1em;
+            background-color: #fff;
+            border: 2px solid red;
+            box-shadow: 2px 2px 2px #ccc;
+            .title-tab2 {
+              position: absolute;
+              display: inline-block;
+              top: -28px; /*タブ調整 */
+              left: -2px; /*タブ調整 */
+              padding: 1px 10px;
+              height: 26px;
+              font-weight: bold;
+              color: #fff; /* タイトル色 */
+              background-color: red; /* タイトル背景色 */
+              border-radius: 8px 8px 0 0;
+             }
           }
-          
         }
+      
       }
       &__right{
         width: 200px;
