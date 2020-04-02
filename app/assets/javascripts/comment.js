@@ -1,4 +1,5 @@
 $(function(){
+  console.log("こんにちは");
   function buildHTML(comment){
     var html = `<div class="comments__box">
                   <strong>
