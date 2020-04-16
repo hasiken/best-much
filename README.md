@@ -13,4 +13,4 @@ My Best Eleven
 また、コメント機能やお気に入り機能を通じてファン同士が交流できるところがポイントです。
 
 ＃実際の機能
-![Uploading 2514d4498a0a4de7ee9aaa3d5a1e5fe8.jpg…]()
+![2514d4498a0a4de7ee9aaa3d5a1e5fe8](https://user-images.githubusercontent.com/61111651/79474293-2cbc7800-8041-11ea-920c-01196f27e249.jpg)
