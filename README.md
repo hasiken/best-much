@@ -1,24 +1,16 @@
-# README
+#タイトル
+My Best Eleven
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#どういったアプリか
+自分が思うサッカー選手（マンチェスターユナイテッドの選手）のベストイレブンを投稿するアプリです
 
-Things you may want to cover:
+#なぜこのアプリを使ったか？
+私は、プログラミングを使って何かを作るということが初めてでした。そのため、まずは、自分が好きな物をテーマに作ることを決めました。
+私はサッカーチームのマンチェスターユナイテッドが好きなのでこれをテーマに作りました。
 
-* Ruby version
+#My Best Eleven の注目ポイント
+マンチェスターユナイテッドのファンが自分の思うベストイレブンを投稿することを通じてもっとチームのことが好きになれると思います
+また、コメント機能やお気に入り機能を通じてファン同士が交流できるところがポイントです。
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+＃実際の機能
+![Uploading 2514d4498a0a4de7ee9aaa3d5a1e5fe8.jpg…]()
