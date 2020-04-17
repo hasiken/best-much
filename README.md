@@ -12,10 +12,20 @@ My Best Eleven
 マンチェスターユナイテッドのファンが自分の思うベストイレブンを投稿することを通じてもっとチームのことが好きになれると思います
 また、コメント機能やお気に入り機能を通じてファン同士が交流できるところがポイントです。
 
+#アプリケーション情報
+URL https://pacific-stream-14738.herokuapp.com/
+テスト用アカウント
+メールアドレス：test@gmail.com
+パスワード：123456789
+
+#開発状況
+ ・開発環境:Html,css/JavaScript/Ruby/Ruby on Rails/MySQL/Github/heroku/Visual Studio Code
+ ・開発期間:２週間
+
 ＃主な機能
 ・トップページ
   ユーザのログインなど各ページに遷移できます
-  
+
 ![2514d4498a0a4de7ee9aaa3d5a1e5fe8](https://user-images.githubusercontent.com/61111651/79474293-2cbc7800-8041-11ea-920c-01196f27e249.jpg)
 
 ・投稿ページ
